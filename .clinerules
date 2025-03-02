@@ -1,0 +1,23 @@
+# Cline Rules Configuration
+
+## Memory Bank Settings
+- storage_format: json
+- max_entries: 1000
+- retention_policy: 30d
+
+## Data Structure
+- id: unique identifier
+- timestamp: ISO 8601 format
+- content: text data
+- metadata: key-value pairs
+
+## Example Entry
+{
+  "id": "example-001",
+  "timestamp": "2025-03-02T15:49:17+08:00", 
+  "content": "This is an example memory entry",
+  "metadata": {
+    "source": "user_input",
+    "priority": "normal"
+  }
+}
